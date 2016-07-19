@@ -4,12 +4,12 @@
   <artifactId>Company</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-<dependency>
+  <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>servlet-api</artifactId>
-    <version>${servlet-api-version}</version>
+    <version>3.1.0</version>
     <scope>provided</scope>
-</dependency>  
+  </dependency>  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>

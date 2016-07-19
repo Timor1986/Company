@@ -15,7 +15,7 @@
 			<td>Phone</td>
 		</tr>
 	</table><br><br>
-	<button>List Clients</button>
+	<button id="listClients" onclick="testFunc()">List Clients</button>
 	<button>Add Client</button>
 	<button>Remove Client</button>
 	<button>Edit Client</button>
@@ -29,8 +29,12 @@
 	</table>
 	
 	<script type="text/javascript">
-		function listTable(tableid)
-		{
+		function listTable(tableid) {
+		}
+		
+		function testFunc() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','CompanyServlet',true);
 		}
 	</script>	
 </body>

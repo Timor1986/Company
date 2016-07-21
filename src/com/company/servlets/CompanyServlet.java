@@ -27,14 +27,14 @@ public class CompanyServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//String buttonId = request.getParameter("button-id");
-		response.setContentType("text/plain");
-		response.getWriter().write("Test");		
-		//switch (buttonId) {
-		//	case "listClients":
-//
-		//		break;
-		//}
+		String buttonId = request.getParameter("button-id");
+	
+		switch (buttonId) {
+			case "listClients":
+				response.setContentType("text/plain");
+				response.getWriter().write("Test");	
+				break;
+		}
 	}
 
 	/**

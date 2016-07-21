@@ -3,6 +3,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("button").click(function(event) {
+		    	var buttonID = event.target.id;
+		    	
+		        $.get('CompanyServlet', {"button-id": buttonID}, function(response) {
+		        	alert(response);
+		        })
+		    });
+		});
+	</script>	
 </head>
 <body>
 	Clients
@@ -16,9 +28,9 @@
 		</tr>
 	</table><br><br>
 	<button id="listClients">List Clients</button>
-	<button>Add Client</button>
-	<button>Remove Client</button>
-	<button>Edit Client</button>
+	<button id="addClient">Add Client</button>
+	<button id="removeClient">Remove Client</button>
+	<button id="editClient">Edit Client</button>
 	<br><br><br>
 	Jobs
 	<table id="jobs">
@@ -27,11 +39,5 @@
 			<td>Salary</td>
 		</tr>
 	</table>
-	
-	<script type="text/javascript">
-		function listTable(tableid) {
-		}
-		
-	</script>	
 </body>
 </html>

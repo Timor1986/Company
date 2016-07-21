@@ -32,7 +32,7 @@ public class CompanyServlet extends HttpServlet {
 		switch (buttonId) {
 			case "listClients":
 				response.setContentType("text/plain");
-				response.getWriter().write("Test");	
+				response.getWriter().write(buttonId);	
 				break;
 		}
 	}
